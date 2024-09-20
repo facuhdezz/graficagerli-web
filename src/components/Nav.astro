@@ -2,21 +2,81 @@
 import Logo from "../../public/logo-nav.webp";
 import Search from "../../public/iconos/search.svg";
 import Close from "../../public/iconos/close.svg";
+import Sell from "../../public/iconos/sell.svg";
+import Client from "../../public/iconos/client.svg";
+import Presupuesto from "../../public/iconos/discounts.svg";
+import Menu from "../../public/iconos/menu.svg";
 ---
 
-<nav class="w-full h-28 top-0 fixed">
-    <div class="flex flex-row h-full items-center justify-center m-auto gap-4">
-        <img class="h-24" src={Logo.src} alt="Gráfica Gerli" />
-        <div class='flex gap-1 items-center bg-gray-800 w-[80%] sm:w-[90%] lg:w-[30%] h-7 rounded-sm p-2'>
+<nav class="w-full top-0 fixed">
+    <div class="flex flex-row h-28 items-center justify-between min-[980px]:justify-center m-auto px-10 gap-10 xl:gap-20">
+        <img class="h-14 sm:h-20" src={Logo.src} alt="Gráfica Gerli" />
+        <div class="max-[980px]:hidden flex gap-1 items-center bg-[#26282c] h-7 w-[400px] xl:w-[500px] rounded-sm p-4">
             <img src={Search.src} alt='Buscar: ícono de lupa' />
             <input type="search" placeholder="Buscar" class="search-input bg-transparent outline-none placeholder:text-gray-200 w-full" />
             <img src={Close.src} alt='Cerrar buscador.' class="hover:cursor-pointer hover:opacity-80 duration-200" />
+        </div>
+        <div class="flex gap-3 items-center">
+            <div class="min-[980px]:hidden div-icons relative flex justify-center">
+                <img class="nav-icons" src={Search.src} alt="icono de busqueda" />
+                <p class="title-icons">Buscar</p>
+            </div>
+            <div class="div-icons hidden relative sm:flex justify-center">
+                <img class="nav-icons" src={Sell.src} alt="icono de venta" />
+                <p class="title-icons">Tienda</p>
+            </div>
+            <div class="div-icons hidden relative sm:flex justify-center">
+                <img class="nav-icons" src={Client.src} alt="icono de usuario" />
+                <p class="title-icons">Iniciar Sesión</p>
+            </div>
+            <div class="div-icons hidden relative sm:flex justify-center">
+                <img class="nav-icons" src={Presupuesto.src} alt="icono de precio" />
+                <p class="title-icons">Presupuesto</p>
+            </div>
+            <div class="div-icons relative flex justify-center">
+                <img class="nav-icons" src={Menu.src} alt="icono de menu" />
+                <p class="title-icons">Menú</p>
+            </div>
         </div>
     </div>
 </nav>
 
 <style>
     nav {
-        background: #0d0f13;
+        /* background: #0d0f13; */
+        background-color: rgba(19, 21, 26, 0.9); /* Fondo semitransparente */
+        backdrop-filter: blur(5px);
+    }
+
+    .nav-icons {
+        height: 44px;
+        background-color: #26282c;
+        padding: 8px;
+        border-radius: 100%;
+        transition-duration: 200ms;
+    }
+
+    .nav-icons:hover {
+        transform: rotate(-20deg);
+        padding: 6px;
+        cursor: pointer;
+    }
+
+    .title-icons {
+        position: absolute;
+        color: white;        
+        background-color: #26282c;
+        padding: 3px;
+        border-radius: 4px;
+        font-size: 0.7rem;
+        text-wrap: nowrap;
+        bottom: -20px;
+        opacity: 0;
+        transition-duration: 200ms;
+    }
+
+    .nav-icons:hover + .title-icons {
+        transform: translateY(8px);
+        opacity: 100%;
     }
 </style>
