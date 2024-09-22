@@ -9,7 +9,7 @@ const { title } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="es" data-theme="dark">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
@@ -24,17 +24,8 @@ const { title } = Astro.props;
 	</body>
 </html>
 <style is:global>
-
-	:root {
-		--primary-color: black;
-		--gradient-background-base: rgb(30,32,39);
-		--gradient-background: radial-gradient(circle, rgba(30,32,39,1) 7%, rgba(19,21,26,1) 36%); 
-		--primary-background: #0d0f14;
-	}
-
 	html {
 		font-family: system-ui, sans-serif;
-		/* background: #13151a; */
-		background: var(--primary-background);
+		background: #13151a;
 	}
 </style>
