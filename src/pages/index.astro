@@ -1,11 +1,16 @@
 ---
+import Destacados from '../components/Destacados.astro';
 import Header from '../components/Header.astro';
 import Layout from '../layouts/Layout.astro';
+import Separador from '../../public/separador.jpg'
 ---
 
 <Layout title="Gráfica Gerli - Servicios de Impresión">
 	<Header />
-	<Header />
+	<!-- <img class="w-full scale-x-[-1]" src={Separador.src} alt="separador" /> -->
 	<main>
+		<Destacados />
 	</main>
+	<!-- <img class="w-full scale-y-[-1]" src={Separador.src} alt="separador" /> -->
+	<Header />
 </Layout>

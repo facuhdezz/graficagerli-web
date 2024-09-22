@@ -1,0 +1,27 @@
+---
+import DestCard from "./DestCard.astro";
+import Volantes from "../../public/volantes.webp"
+import Tarjetas from "../../public/tarjetas.webp"
+import Boletas from "../../public/boletas.webp"
+import Etiquetas from "../../public/etiquetas.webp"
+---
+
+<section class="w-full">
+    <div class="p-10 flex flex-col items-center gap-10 mx-auto">
+        <h1 class="text-5xl font-bold text-white">Productos Destacados</h1>
+        <div class="flex flex-row justify-center gap-4 w-[80%] overflow-x-scroll">
+            <DestCard imagen={Volantes} titulo="Volantes"/>
+            <DestCard imagen={Tarjetas} titulo="Tarjetas"/>
+            <DestCard imagen={Boletas} titulo="Boletas"/>
+            <DestCard imagen={Etiquetas} titulo="Etiquetas"/>
+        </div>
+    </div>
+</section>
+
+<style>
+    section {
+        /* background: rgb(40,5,5);
+        background: radial-gradient(circle, rgba(40,5,5,1) 16%, rgba(17,3,3,1) 63%);  */
+        /* background-color: rgb(220, 223, 188); */
+    }
+</style>

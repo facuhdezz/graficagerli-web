@@ -3,38 +3,43 @@ import Logo from "../../public/logo-nav.webp";
 import Search from "../../public/iconos/search.svg";
 import Close from "../../public/iconos/close.svg";
 import Sell from "../../public/iconos/sell.svg";
-import Client from "../../public/iconos/client.svg";
+import Client from "../../public/iconos/acount.svg";
 import Presupuesto from "../../public/iconos/discounts.svg";
 import Menu from "../../public/iconos/menu.svg";
+import Home from "../../public/iconos/home.svg";
 ---
 
-<nav class="w-full top-0 fixed">
+<nav class="w-full top-0 fixed z-50">
     <div class="flex flex-row h-28 items-center justify-between min-[980px]:justify-center m-auto px-10 gap-10 xl:gap-20">
         <img class="h-14 sm:h-20" src={Logo.src} alt="Gráfica Gerli" />
         <div class="max-[980px]:hidden flex gap-1 items-center bg-[#26282c] h-7 w-[400px] xl:w-[500px] rounded-sm p-4">
             <img src={Search.src} alt='Buscar: ícono de lupa' />
-            <input type="search" placeholder="Buscar" class="search-input bg-transparent outline-none placeholder:text-gray-200 w-full" />
+            <input type="search" placeholder="Buscar" class="search-input bg-transparent text-white outline-none placeholder:text-gray-200 w-full" />
             <img src={Close.src} alt='Cerrar buscador.' class="hover:cursor-pointer hover:opacity-80 duration-200" />
         </div>
         <div class="flex gap-3 items-center">
             <div class="min-[980px]:hidden div-icons relative flex justify-center">
-                <img class="nav-icons" src={Search.src} alt="icono de busqueda" />
+                <img tabindex="0" class="nav-icons" src={Search.src} alt="icono de busqueda" />
                 <p class="title-icons">Buscar</p>
             </div>
             <div class="div-icons hidden relative sm:flex justify-center">
-                <img class="nav-icons" src={Sell.src} alt="icono de venta" />
+                <img tabindex="0" class="nav-icons" id="home" src={Home.src} alt="icono de inicio" />
+                <p class="title-icons">Inicio</p>
+            </div>
+            <div class="div-icons hidden relative sm:flex justify-center">
+                <img tabindex="0" class="nav-icons" src={Sell.src} alt="icono de venta" />
                 <p class="title-icons">Tienda</p>
             </div>
             <div class="div-icons hidden relative sm:flex justify-center">
-                <img class="nav-icons" src={Client.src} alt="icono de usuario" />
+                <img tabindex="0" class="nav-icons" src={Client.src} alt="icono de usuario" />
                 <p class="title-icons">Iniciar Sesión</p>
             </div>
             <div class="div-icons hidden relative sm:flex justify-center">
-                <img class="nav-icons" src={Presupuesto.src} alt="icono de precio" />
+                <img tabindex="0" class="nav-icons" src={Presupuesto.src} alt="icono de precio" />
                 <p class="title-icons">Presupuesto</p>
             </div>
             <div class="div-icons relative flex justify-center">
-                <img class="nav-icons" src={Menu.src} alt="icono de menu" />
+                <img tabindex="0" class="nav-icons" src={Menu.src} alt="icono de menu" />
                 <p class="title-icons">Menú</p>
             </div>
         </div>
@@ -54,6 +59,10 @@ import Menu from "../../public/iconos/menu.svg";
         padding: 8px;
         border-radius: 100%;
         transition-duration: 200ms;
+    }
+
+    .nav-icons:focus {
+        background-color: #7f1d1d;
     }
 
     .nav-icons:hover {
