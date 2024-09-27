@@ -8,9 +8,23 @@ import Layout from '../layouts/Layout.astro';
 <Layout title="Gráfica Gerli - Servicios de Impresión">
 	<Header />
 	<!-- <img class="w-full scale-x-[-1]" src={Separador.src} alt="separador" /> -->
-	<main class="my-32">
+	<main class="py-16 relative">
+		<div class="-z-10 w-32 sm:w-60 blur-[200px] h-60 rounded-full bg-blue-900 absolute pointer-events-none select-none top-80 right-0"></div>
+		<div class="-z-10 w-20 sm:w-44 blur-[200px] h-44 rounded-full bg-blue-800 absolute pointer-events-none select-none top-10 left-16"></div>
+		<div class="-z-10 w-20 sm:w-44 blur-[200px] h-44 rounded-full bg-blue-800 absolute pointer-events-none select-none top-32 left-0 sm:left-96"></div>
+		<div class="-z-10 w-16 sm:w-36 blur-[200px] h-36 rounded-full bg-blue-800 absolute pointer-events-none select-none top-[920px] left-0 sm:left-72"></div>
 		<Destacados />
-		<Cat />
+		<!-- <Cat /> -->
 	</main>
 	<!-- <img class="w-full scale-y-[-1]" src={Separador.src} alt="separador" /> -->
 </Layout>
+
+<style>
+	main {
+		background: rgb(13,13,24);
+		background: linear-gradient(0deg, rgb(16, 16, 16) 35%, rgb(10, 10, 10) 65%); 
+		background-attachment: fixed;
+		z-index: 1;
+		height: 100dvh;
+	}	
+</style>

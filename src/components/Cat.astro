@@ -3,9 +3,8 @@ import Arrow from '../../public/iconos/arrow.svg'
 const trabajos = ["Almanaques", "Afiches", "Tarjetas", "Etiquetas", "Volantes", "Boletas", "Carpetas Corporativas", "Hojas Membretadas", "Sobres Comerciales"]
 ---
 
-<section class="pt-16 text-center">
-    <h1 class="text-white font-semibold text-4xl">Productos</h1>
-    <div class="grid sm:grid-cols-2 xl:grid-cols-3 gap-3 justify-center p-10 w-full xl:w-4/5 mx-auto">
+<section class="text-center">
+    <div class="grid grid-cols-2 xl:grid-cols-3 gap-3 justify-center px-16 w-full xl:w-4/5 mx-auto">
         {trabajos && trabajos.map((trabajo) => {
             return <a class="relative text-base xl:text-2xl"><p class="mx-10">{trabajo}</p><img class="absolute right-3 top-1 xl:top-3 scale-105" src={Arrow.src} /></a>
         })}
@@ -24,7 +23,7 @@ const trabajos = ["Almanaques", "Afiches", "Tarjetas", "Etiquetas", "Volantes", 
 
     section a:hover {        
         cursor: pointer;
-        background-color: #7f1d1d;
+        background-color: #2f1d7f;
     }
 
     a:hover img {
