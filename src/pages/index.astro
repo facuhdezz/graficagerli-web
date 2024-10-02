@@ -1,6 +1,7 @@
 ---
-import Cat from '../components/Cat.astro';
 import Destacados from '../components/Destacados.astro';
+import Footer from '../components/Footer.astro';
+import Form from '../components/Form.astro';
 import Header from '../components/Header.astro';
 import Layout from '../layouts/Layout.astro';
 ---
@@ -15,7 +16,9 @@ import Layout from '../layouts/Layout.astro';
 		<div class="-z-10 w-16 sm:w-36 blur-[200px] h-36 rounded-full bg-blue-800 absolute pointer-events-none select-none top-[920px] left-0 sm:left-72"></div>
 		<Destacados />
 		<!-- <Cat /> -->
+		<Form />
 	</main>
+	<Footer />
 	<!-- <img class="w-full scale-y-[-1]" src={Separador.src} alt="separador" /> -->
 </Layout>
 
@@ -25,6 +28,7 @@ import Layout from '../layouts/Layout.astro';
 		background: linear-gradient(0deg, rgb(16, 16, 16) 35%, rgb(10, 10, 10) 65%); 
 		background-attachment: fixed;
 		z-index: 1;
-		height: 100dvh;
+		height: 100%; 
+        border-bottom: 1px solid rgb(39, 39, 61);
 	}	
 </style>

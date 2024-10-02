@@ -1,0 +1,34 @@
+---
+import Mapa from "../../public/mapa.webp";
+import Logo from "../../public/logo-nav.webp";
+import Wpp from '../../public/iconos/whatsapp.svg';
+import Ig from '../../public/iconos/instagram.svg';
+import Fb from '../../public/iconos/facebook.svg';
+---
+
+<footer class="p-6 flex flex-col justify-center items-center gap-6">
+    <img class="w-52" src={Logo.src} />
+    <a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/place/Gr%C3%A1fica+Gerli/@-34.4595485,-56.3928948,16.25z/data=!4m14!1m7!3m6!1s0x95a1bba19c27d237:0xac1fe3d8792d8244!2sGr%C3%A1fica+Gerli!8m2!3d-34.4587017!4d-56.3923202!16s%2Fg%2F11w8576b26!3m5!1s0x95a1bba19c27d237:0xac1fe3d8792d8244!8m2!3d-34.4587017!4d-56.3923202!16s%2Fg%2F11w8576b26?entry=ttu&g_ep=EgoyMDI0MDkzMC4wIKXMDSoASAFQAw%3D%3D" class="rounded-xl overflow-hidden">
+        <img class="hover:scale-105 duration-300" src={Mapa.src} />
+    </a>
+    <div class="flex flex-col items-center text-center gap-2">
+        <h1 class="text-2xl font-semibold text-white">Contacto</h1>
+        <p class="text-white">Teléfono: <span class="font-semibold">092 741 514</span> - <span class="font-semibold">092 639 693</span></p>
+        <a href="https://www.google.com/maps/place/Gr%C3%A1fica+Gerli/@-34.4595485,-56.3928948,16.25z/data=!4m14!1m7!3m6!1s0x95a1bba19c27d237:0xac1fe3d8792d8244!2sGr%C3%A1fica+Gerli!8m2!3d-34.4587017!4d-56.3923202!16s%2Fg%2F11w8576b26!3m5!1s0x95a1bba19c27d237:0xac1fe3d8792d8244!8m2!3d-34.4587017!4d-56.3923202!16s%2Fg%2F11w8576b26?entry=ttu&g_ep=EgoyMDI0MDkzMC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer"><p class="text-white hover:text-gray-400">Vicente Grucci 258, Santa Lucía, Canelones</p></a>
+        <div class='flex items-center gap-2'>
+            <a href="https://wa.me/59892741514" target="_blank" rel="noopener noreferrer"><img class='h-6 hover:opacity-60 hover:cursor-pointer duration-200' src={Wpp.src} alt='Ícono de WhatsApp' /></a>
+            <a href="https://www.instagram.com/graficagerli/" target="_blank" rel="noopener noreferrer"><img class='h-6 hover:opacity-60 hover:cursor-pointer duration-200' src={Ig.src} alt='Ícono de Instagram' /></a>
+        </div>
+        <div class="text-xs text-center text-gray-300">
+            <p>© 2024 Climatización Santa Lucía</p>
+            <a href="https://www.instagram.com/border.visual/" target="_blank" rel="noopener noreferrer"><p class="hover:text-white duration-200">Diseño web por BORDER</p></a>
+        </div>
+    </div>
+</footer>
+
+<style>
+    footer {        
+        background: rgb(11, 12, 15);
+        background: radial-gradient(circle, rgb(12, 13, 19) 7%, rgb(10, 10, 12) 36%); 
+    }
+</style>
