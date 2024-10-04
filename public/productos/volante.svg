@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2020 (64-Bit Versión de evaluación) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="500px" height="423px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 1847.72 1563.46"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str2 {stroke:white;stroke-width:47.28;stroke-miterlimit:22.9256}
+    .str0 {stroke:white;stroke-width:59.1;stroke-miterlimit:22.9256}
+    .str1 {stroke:white;stroke-width:35.46;stroke-linecap:round;stroke-miterlimit:22.9256}
+    .fil0 {fill:none}
+   ]]>
+  </style>
+ </defs>
+ <g id="Capa_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <polygon class="fil0 str0" points="29.55,224.59 636.84,45.07 1226.58,232.21 1818.16,40.63 1818.16,1328.35 1226.68,1520.31 636.69,1335.55 29.55,1523.39 "/>
+  <line class="fil0 str0" x1="636.84" y1="45.07" x2="636.69" y2= "1335.55" />
+  <line class="fil0 str0" x1="1226.58" y1="232.21" x2="1226.44" y2= "1522.7" />
+  <line class="fil0 str1" x1="764.43" y1="288.76" x2="1088.02" y2= "392.93" />
+  <line class="fil0 str1" x1="764.43" y1="456.42" x2="1088.02" y2= "560.59" />
+  <line class="fil0 str1" x1="764.43" y1="621.45" x2="1088.02" y2= "725.62" />
+  <path class="fil0 str2" d="M800.75 811.37l257.1 82.01c12.19,3.89 23.27,10.47 23.27,23.27l0 314.72c0,12.8 -11.09,27.21 -23.27,23.28l-257.1 -83.12c-12.18,-3.93 -23.27,-10.47 -23.27,-23.27l0 -313.61c0,-12.81 11.07,-27.16 23.27,-23.28z"/>
+  <path class="fil0 str2" d="M464.33 292.31l-257.09 82.01c-12.2,3.89 -23.28,10.47 -23.28,23.27l0 314.73c0,12.79 11.1,27.21 23.28,23.27l257.09 -83.12c12.18,-3.93 23.28,-10.47 23.28,-23.27l0 -313.61c0,-12.8 -11.08,-27.16 -23.28,-23.28z"/>
+  <path class="fil0 str2" d="M1652.31 292.31l-257.1 82.01c-12.19,3.89 -23.27,10.47 -23.27,23.27l0 314.73c0,12.79 11.09,27.21 23.27,23.27l257.1 -83.12c12.18,-3.93 23.27,-10.47 23.27,-23.27l0 -313.61c0,-12.8 -11.07,-27.16 -23.27,-23.28z"/>
+  <line class="fil0 str1" x1="1680.81" y1="819.65" x2="1357.22" y2= "923.82" />
+  <line class="fil0 str1" x1="1680.81" y1="987.31" x2="1357.22" y2= "1091.48" />
+  <line class="fil0 str1" x1="1680.81" y1="1152.33" x2="1357.22" y2= "1256.5" />
+  <line class="fil0 str1" x1="499.28" y1="816.79" x2="175.69" y2= "920.96" />
+  <line class="fil0 str1" x1="499.28" y1="984.45" x2="175.69" y2= "1088.62" />
+  <line class="fil0 str1" x1="499.28" y1="1149.47" x2="175.69" y2= "1253.64" />
+ </g>
+</svg>

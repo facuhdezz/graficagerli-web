@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2020 (64-Bit Versión de evaluación) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="359px" height="500px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 42.73 59.6"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str1 {stroke:white;stroke-width:1.35;stroke-miterlimit:22.9256}
+    .str0 {stroke:white;stroke-width:2.25;stroke-miterlimit:22.9256}
+    .str2 {stroke:white;stroke-width:1.35;stroke-linecap:round;stroke-miterlimit:22.9256}
+    .fil0 {fill:none}
+   ]]>
+  </style>
+ </defs>
+ <g id="Capa_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <rect class="fil0 str0" x="1.12" y="1.12" width="40.48" height="57.35" rx="1.18" ry="1.18"/>
+  <circle class="fil0 str1" cx="9.18" cy="8.93" r="3.25"/>
+  <line class="fil0 str2" x1="6.35" y1="53.33" x2="36.38" y2= "53.33" />
+  <g id="_2835074423696">
+   <line class="fil0 str2" x1="16.31" y1="7.15" x2="35.2" y2= "7.15" />
+   <line class="fil0 str2" x1="16.31" y1="10.7" x2="35.2" y2= "10.7" />
+  </g>
+ </g>
+</svg>

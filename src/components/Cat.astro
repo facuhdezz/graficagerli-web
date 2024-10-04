@@ -1,32 +1,109 @@
 ---
 import Arrow from '../../public/iconos/arrow.svg'
 const trabajos = ["Almanaques", "Afiches", "Tarjetas", "Etiquetas", "Volantes", "Boletas", "Carpetas Corporativas", "Hojas Membretadas", "Sobres Comerciales"]
+import Almanaque from "../../public/productos/almanaque.svg";
+import Afiche from "../../public/productos/afiche.svg";
+import Tarjeta from "../../public/productos/tarjeta.svg";
+import Etiqueta from "../../public/productos/etiqueta.svg";
+import Volante from "../../public/productos/volante.svg";
+import Factura from "../../public/productos/factura.svg";
+import Carpeta from "../../public/productos/carpeta.svg";
+import Membretada from "../../public/productos/membretada.svg";
+import Sobre from "../../public/productos/sobre.svg";
 ---
 
-<section class="text-center">
-    <div class="grid grid-cols-2 xl:grid-cols-3 gap-3 justify-center px-16 w-full xl:w-4/5 mx-auto">
-        {trabajos && trabajos.map((trabajo) => {
-            return <a class="relative text-base xl:text-2xl"><p class="mx-10">{trabajo}</p><img class="absolute right-3 top-1 xl:top-3 scale-105" src={Arrow.src} /></a>
-        })}
+<section class="text-center mt-16">
+    <h1 class="text-3xl lg:text-5xl font-bold text-yellow-100">Un producto para cada necesidad</h1>
+    <div class="flex justify-center flex-wrap items-center gap-10 px-10 w-full xl:w-4/5 mx-auto mt-10">
+        <div class="product-container">
+            <img src={Almanaque.src} alt="Ícono de almanaque">
+            <p class="title-icons">Almanaques</p>
+        </div>
+        <div class="product-container">
+            <img src={Afiche.src} alt="Ícono de afiche">
+            <p class="title-icons">Afiches</p>
+        </div>
+        <div class="product-container">
+            <img src={Carpeta.src} alt="Ícono de carpeta">
+            <p class="title-icons">Carpetas Corporativas</p>
+        </div>
+        <div class="product-container">
+            <img src={Etiqueta.src} alt="Ícono de etiqueta">
+            <p class="title-icons">Etiquetas Autoadhesivas</p>
+        </div>
+        <div class="product-container">
+            <img src={Factura.src} alt="Ícono de factura">
+            <p class="title-icons">Boletas</p>
+        </div>
+        <div class="product-container">
+            <img src={Membretada.src} alt="Ícono de membretada">
+            <p class="title-icons">Hojas Membretadas</p>
+        </div>
+        <div class="product-container">
+            <img src={Sobre.src} alt="Ícono de sobre">
+            <p class="title-icons">Sobres Comerciales</p>
+        </div>
+        <div class="product-container">
+            <img src={Tarjeta.src} alt="Ícono de tarjeta">
+            <p class="title-icons">Tarjetas</p>
+        </div>
+        <div class="product-container">
+            <img src={Volante.src} alt="Ícono de volante">
+            <p class="title-icons">Volantes</p>
+        </div>
     </div>
 </section>
 
 <style>
-    section a {
-        padding: 5px;
-        background: #26282c;
+    .product-container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: bottom;
+        width: 80px;
+        height: 80px;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    .product-container img {
+        width: auto;
+        height: auto;
+        opacity: 0.8;
+        transition-duration: 200ms;
+    }    
+
+    .product-container img:hover {
+        transform: rotate(10deg);
+        cursor: pointer;
+        opacity: 1;
+    }
+
+    .title-icons {
+        position: absolute;
         color: white;
-        font-weight: 500;
-        border-radius: 10px;
+        padding: 3px;
+        border-radius: 4px;
+        font-size: 0.8rem;
+        text-wrap: wrap;
+        top: 80px;
         transition-duration: 200ms;
     }
 
-    section a:hover {        
-        cursor: pointer;
-        background-color: #2f1d7f;
+    .product-container img:hover + .title-icons {
+        transform: translateY(-10px);
     }
 
-    a:hover img {
-        transform: rotate(-30deg);
+    @media (min-width: 800px) {
+        .product-container{
+            width: 120px;
+            height: 120px;
+            margin-bottom: 40px;
+        }
+
+        .title-icons {
+            top: 125px;
+            font-size: 1rem;
+        }
     }
 </style>
