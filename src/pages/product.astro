@@ -2,9 +2,10 @@
 import Layout from "../layouts/Layout.astro";
 import Volantes from "../../public/volantes.webp";
 import Footer from "../components/Footer.astro";
+import Presupuesto from "../components/Presupuesto.astro";
 ---
 
-<Layout title="Gráfica Gerli - Servicios de Impresión">
+<Layout title="Gráfica Gerli - Presupuesto">
 	<!-- <img class="w-full scale-x-[-1]" src={Separador.src} alt="separador" /> -->
 	<main class="py-16 relative pt-40">
 		<!-- <div class="-z-10 w-32 sm:w-60 blur-[200px] h-60 rounded-full bg-blue-900 absolute pointer-events-none select-none top-80 right-0"></div>
@@ -22,6 +23,7 @@ import Footer from "../components/Footer.astro";
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, velit earum nihil, aut illo sequi dolore non harum ex amet eveniet quis eaque quo atque assumenda excepturi itaque quibusdam inventore.</p>
             </article>
         </section>
+		<Presupuesto />
 	</main>
 	<Footer />
 	<!-- <img class="w-full scale-y-[-1]" src={Separador.src} alt="separador" /> -->
@@ -33,7 +35,7 @@ import Footer from "../components/Footer.astro";
 		background: linear-gradient(0deg, rgb(16, 16, 16) 35%, rgb(10, 10, 10) 65%); 
 		background-attachment: fixed;
 		z-index: 1;
-		height: 100dvh; 
+		height: 100%; 
         border-bottom: 1px solid rgb(39, 39, 61);
 	}	
 </style>

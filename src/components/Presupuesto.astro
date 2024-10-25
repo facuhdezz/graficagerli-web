@@ -1,0 +1,75 @@
+<section class="w-2/4 m-auto text-white mt-20 flex flex-col gap-12 border border-gray-500 p-12 rounded-lg">
+    <h1 class="text-4xl text-yellow-100 font-bold text-center">Presupuestar este trabajo</h1>
+    <form class="flex flex-col gap-10">
+        <article class="flex flex-col gap-4">
+            <h1 class="font-semibold text-2xl">Datos de contacto:</h1>
+            <div class="inputdiv">
+                <input type="text" name="nombre" placeholder="Nombre *" required></input>
+            </div>
+            <div class="inputdiv">
+                <input type="number" name="telefono" placeholder="Teléfono/móvil *" required></input>
+            </div>
+            <div class="inputdiv">
+                <input type="email" name="correo" placeholder="Correo electrónico *" required></input>
+            </div>
+            <div class="inputdiv">
+                <input type="text" name="empresa" placeholder="Empresa"></input>
+            </div>
+        </article>
+        <article class="flex flex-col gap-4">
+            <h1 class="font-semibold text-2xl">Características del trabajo:</h1>
+            <div class="inputdiv flex flex-row gap-4">
+                <input type="number" name="cantidad" placeholder="Cantidad a cotizar *" required></input>
+                <input type="text" name="tamaño" placeholder="Tamaño (cm)*" required></input>
+            </div>
+            <div class="inputdiv flex flex-row gap-4">
+                <select name="Papel">
+                    <option value="" disabled selected>Seleccione el tipo de papel</option>
+                    <option value="Recomendado" >Recomendado</option>
+                    <option value="Normal" >Normal</option>
+                    <option value="Satinado" >Satinado</option>
+                    <option value="Mate" >Coteado Mate</option>
+                    <option value="Brillo" >Coteado Brillo</option>
+                    <option value="Autoadhesivo" >Autoadhesivo</option>
+                    <option value="BOPP" >BOPP Autoadhesivo</option>
+                    <option value="Cartulina" >Cartulina</option>
+                    <option value="Otro" >Otro</option>
+                </select>
+                <select name="Gramaje">
+                    <option value="" disabled selected>Seleccione el gramaje</option>
+                    <option value="Recomendado" >Recomendado</option>
+                    <option value="60" >60gr</option>
+                    <option value="75" >75gr</option>
+                    <option value="90" >90gr</option>
+                    <option value="115" >115gr</option>
+                    <option value="130" >130gr</option>
+                    <option value="150" >150gr</option>
+                    <option value="200" >200gr</option>
+                    <option value="256" >256gr</option>
+                    <option value="Otro" >Otro</option>
+                </select>
+            </div>
+        </article>
+    </form>
+</section>
+
+<style>
+    .inputdiv {
+        width: 100%;
+        height: 35px;
+    }
+
+    input, select {
+        width: 100%;
+        height: 100%;
+        background-color: rgb(248, 247, 255);
+        border-radius: 4px;
+        padding-inline: 10px;
+        outline: none;
+        color: black;
+    }
+
+    input::placeholder {
+        color: rgb(109, 109, 109);
+    }
+</style>
